@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shriji Decorators & Event Managers | Pune</title>
+<meta name="description" content="Shriji Decorators & Event Managers - Customized decoration and complete event management in Pune.">
+<style>
+:root{--maroon:#64152a;--gold:#c89b3c;--cream:#fffaf2;--dark:#24171b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:var(--dark);background:var(--cream);line-height:1.6}
+nav{position:fixed;top:0;width:100%;z-index:10;background:rgba(36,23,27,.94);display:flex;justify-content:space-between;align-items:center;padding:16px 7%}
+.logo{color:#fff;font-weight:800;font-size:19px;letter-spacing:.5px}
+.logo span{color:#e1b95a}
+nav a{color:#fff;text-decoration:none;margin-left:25px;font-size:14px}
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 7% 70px;color:white;background:linear-gradient(90deg,rgba(36,12,20,.9),rgba(36,12,20,.42)),url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1800&q=85") center/cover}
+.hero-content{max-width:700px}
+.badge{display:inline-block;border:1px solid var(--gold);color:#f0cc72;padding:7px 14px;border-radius:30px;margin-bottom:20px;font-size:13px}
+h1{font-family:Georgia,serif;font-size:clamp(44px,7vw,78px);line-height:1.02;margin-bottom:20px}
+.hero p{font-size:19px;max-width:620px;color:#f8ece7}
+.btn{display:inline-block;margin-top:28px;padding:13px 22px;border-radius:5px;text-decoration:none;font-weight:700;margin-right:10px}
+.primary{background:var(--gold);color:#24171b}.secondary{border:1px solid white;color:white}
+section{padding:80px 7%}
+.section-head{text-align:center;max-width:700px;margin:0 auto 42px}
+.section-head h2{font:700 42px Georgia,serif;color:var(--maroon);margin-bottom:10px}
+.section-head p{color:#66565b}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about img{width:100%;height:430px;object-fit:cover;border-radius:12px}
+.about h2{font:700 42px Georgia,serif;color:var(--maroon);margin-bottom:15px}
+.services{background:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--cream);border-radius:12px;overflow:hidden;border:1px solid #eee2d3;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 15px 30px #0001}
+.card img{width:100%;height:220px;object-fit:cover}
+.card div{padding:20px}.card h3{color:var(--maroon);margin-bottom:7px;font-size:20px}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gallery img{width:100%;height:250px;object-fit:cover;border-radius:8px}
+.why{background:var(--maroon);color:white}
+.why .section-head h2{color:white}.why .section-head p{color:#eadde0}
+.points{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.point{padding:25px;border:1px solid #ffffff30;border-radius:10px}
+.point b{color:#e3bd63;display:block;margin-bottom:6px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact h2{font:700 42px Georgia,serif;color:var(--maroon);margin-bottom:15px}
+.info{margin:18px 0}.info b{color:var(--maroon)}
+footer{background:#24171b;color:#ddd;text-align:center;padding:28px}
+@media(max-width:800px){
+ nav{padding:14px 5%}nav div:last-child{display:none}
+ .about,.contact{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.points{grid-template-columns:1fr}
+}
+@media(max-width:520px){section{padding:60px 5%}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery img{height:230px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">SHRIJI <span>DECORATORS</span></div>
+  <div><a href="#home">Home</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+</nav>
+
+<section class="hero" id="home">
+ <div class="hero-content">
+  <div class="badge">CUSTOM DECORATION • EVENT MANAGEMENT • PUNE</div>
+  <h1>Your Occasion.<br>Your Vision.<br>Our Decoration.</h1>
+  <p>From beautiful home celebrations to grand events, Shriji Decorators & Event Managers creates customized decorations and manages every detail of your special occasion.</p>
+  <a class="btn primary" href="#contact">Get a Quote</a>
+  <a class="btn secondary" href="https://wa.me/919356814395?text=Hello%20Shriji%20Decorators%2C%20I%20would%20like%20an%20event%20decoration%20quotation." target="_blank">WhatsApp Us</a>
+ </div>
+</section>
+
+<section id="about">
+ <div class="about">
+  <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1000&q=85" alt="Event decoration inspiration">
+  <div>
+   <h2>We Make Every Occasion Special</h2>
+   <p>Shriji Decorators & Event Managers is a Pune-based service for customized decoration and complete event management.</p><br>
+   <p>Whether it is a small celebration at home, a beautiful Ganpati setup, a themed birthday, or a large event, we plan and execute the setup according to your requirements, theme and budget.</p>
+  </div>
+ </div>
+</section>
+
+<section class="services" id="services">
+ <div class="section-head"><h2>Our Services</h2><p>Customized solutions for celebrations of every size.</p></div>
+ <div class="grid">
+  <article class="card"><img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=85"><div><h3>Home Decoration</h3><p>Elegant customized setups for birthdays, anniversaries, house functions and special moments.</p></div></article>
+  <article class="card"><img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=900&q=85"><div><h3>Ganpati Decoration</h3><p>Traditional, modern and theme-based decoration concepts for your Ganpati celebration.</p></div></article>
+  <article class="card"><img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=85"><div><h3>Navratri Decoration</h3><p>Festive stage, garba, backdrop, floral and traditional decoration for Navratri celebrations.</p></div></article>
+  <article class="card"><img src="https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?auto=format&fit=crop&w=900&q=85"><div><h3>Diwali Decoration</h3><p>Elegant festive décor, lights, flowers and traditional setups for homes, offices and events.</p></div></article>
+  <article class="card"><img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=85"><div><h3>Festival Decorations</h3><p>Customized decoration for festivals, cultural celebrations and special festive occasions.</p></div></article>
+  <article class="card"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=85"><div><h3>Wedding & Reception</h3><p>Beautiful stages, floral arrangements, lighting and venue decoration for memorable celebrations.</p></div></article>
+  <article class="card"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=85"><div><h3>Birthday & Theme Events</h3><p>Fun, creative and personalized themes designed around your occasion.</p></div></article>
+  <article class="card"><img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=900&q=85"><div><h3>Small to Large Events</h3><p>We handle intimate gatherings as well as larger celebrations and professional events.</p></div></article>
+  <article class="card"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=85"><div><h3>Complete Event Management</h3><p>Planning, coordination, decoration and execution—we manage your event from start to finish.</p></div></article>
+ </div>
+</section>
+
+<section id="gallery">
+ <div class="section-head"><h2>Design Inspiration</h2><p>Example styles to show the kind of work we can create. Your own project gallery can be added as events are completed.</p></div>
+ <div class="gallery">
+  <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=85">
+  <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=85">
+  <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=85">
+  <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=85">
+ </div>
+</section>
+
+<section class="why">
+ <div class="section-head"><h2>Why Choose Shriji?</h2><p>We focus on your idea and turn it into a well-executed event.</p></div>
+ <div class="points">
+  <div class="point"><b>01 — Customized Concepts</b>Decoration designed around your theme, colors and requirements.</div>
+  <div class="point"><b>02 — Every Event Size</b>From a small home celebration to a large-scale event.</div>
+  <div class="point"><b>03 — Complete Management</b>One team to coordinate and execute your event smoothly.</div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="contact">
+  <div><h2>Let's Plan Your Event</h2><p>Tell us your occasion, preferred date, decoration requirements and budget. We'll discuss a suitable concept with you.</p></div>
+  <div>
+   <div class="info"><b>📍 Location</b><br>Pune, Maharashtra</div>
+   <div class="info"><b>📞 Phone</b><br>+91 93568 14395 / +91 79729 90562</div>
+   <div class="info"><b>💬 WhatsApp</b><br><a href="https://wa.me/919356814395" target="_blank">Chat with Shriji Decorators</a></div>
+   <div class="info"><b>📧 Email</b><br><a href="mailto:makrandddarade@gmail.com">makrandddarade@gmail.com</a></div>
+   <a class="btn primary" href="https://wa.me/919356814395?text=Hello%20Shriji%20Decorators%2C%20I%20want%20to%20discuss%20an%20event." target="_blank">Enquire on WhatsApp</a>
+  </div>
+ </div>
+</section>
+<footer>© 2026 Shriji Decorators & Event Managers • Pune</footer>
+</body>
+</html>
